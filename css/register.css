@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*عشان اي بوردر ماياثر ع الويدذ والهاي*/
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background: #333;
+    padding: 10px 0 ;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul#user_info {
+    display: none;
+    align-items: center;
+}
+
+nav ul#user_info li i {
+    color: #ffff;
+    cursor: pointer;
+    font-size: 20px;    
+}
+
+nav ul#user_info li {
+    position: relative;
+    margin: 0 7px;
+}
+
+nav ul#user_info .carts-products {
+    position: absolute;
+    background: #ddd;
+    border: 1px solid green;
+    transform: translate(-42%, 0);
+    padding: 10px;
+    width: 200px;
+    top: 45px;
+    display: none;
+}
+
+nav ul#user_info .carts-products a {
+    display: block;
+    color: black;
+    margin: 0;
+    padding: 5px;
+    background: darkgreen;
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+}
+
+nav ul#user_info li .badge {
+    color: #ffff;
+    width: 20px;
+    height: 20px;
+    background: crimson;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+    right: -10px;
+    font-size: 12px;
+    line-height: 20px;
+    display: none;
+
+}
+
+
+ul li a {
+    display: block;
+    color: #ffff;
+    min-width: 50px;
+    margin: 0 5px;
+    padding: 5px;
+
+}
+
+/* ================ Form ================= */
+
+.section-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    background-color: #BDCDD6;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-form h2 {
+    font-size: 50px;
+    color: #0C2D57;
+    letter-spacing: 2px;
+}
+
+/* .section-form form {
+
+} */
+
+.section-form input {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #ddd;
+
+}
+
+.section-form input[type="submit"] {
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+} 
+
+.section-form input[type="submit"]:hover {
+    background-color:#0C2D57;
+    color: #ffff;
+}
+
+#search {
+ width: 100%;
+ height: 40px;
+ display: block;
+ margin: 10px 0;
+ padding: 5px;
+ border: 1px solid #b5b5b5;
+ border-radius: 5px;
+ font-size: 15px;   
+ font-family: 'Oswald', sans-serif;
+}
+
+/* product */
+
+.products {
+    width: 60%;
+    float: left;
+    margin: 10px 0;
+}
+
+.products-filter {
+    width: 35%;
+    float: right;
+    margin: 10px 0;
+
+}
+
+#size-filter {
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.product-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    min-height: 150px;
+}
+
+
+.product-item-img {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.product-item-desc a{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+
+.product-item-action {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.product-item-action .add-to-cart {
+    display: block;
+    margin-left: auto;
+    background: green;
+    font-size: 18px;
+    color: #ffff;
+    border: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    
+    
+}
+
+.product-item-action .favorite {
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: auto;
+}
+
+
+.item-details img {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #333;
+    padding: 2px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.edit-product {
+    display: block;
+    padding: 10px 15px;
+    width: 140px;
+    border: none;
+    border-radius: 3px;
+    color: #ffff;
+    background-color: #0C2D57;
+    cursor: pointer;
+}
