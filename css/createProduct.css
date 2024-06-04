@@ -1,0 +1,26 @@
+/* .create-product-page {
+
+}
+
+.create-product-page form {
+
+} */
+
+.create-product-page input,
+.create-product-page select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    display: block;
+    margin: 10px 0;
+    font-size: 17px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.create-product-page input[type="submit"] {
+    background-color: #0C2D57;
+    color: #ffff;
+    border: 0;
+    cursor: pointer;
+}

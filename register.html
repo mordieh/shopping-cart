@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Oswald Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+   <!-- ============ -->
+    <title>Shopping Cart | Register Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="css/style.rtl.css">
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> shopping cart </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="login.html"> Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                        <i id="en-lang">En</i>
+                        <i id="ar-lang">Ar</i>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   </header> 
+    
+   <section class="section-form">
+    <form novalidate>
+        <h2> Register User</h2>
+        <input type="text" placeholder="Enter Username.." id="username" />
+        <input type="email" placeholder="Enter Email" id="email" />
+        <input type="password" placeholder="Enter Password.." id="password" />
+
+        <input type="submit" value="sign up" id="sign_up" />
+
+        I have Account <a href="login.html">Login</a>
+    </form>
+
+   </section>
+
+ 
+<script src="js/register.js"></script>
+<script src="js/langDir.js"></script>
+</body>
+</html>
